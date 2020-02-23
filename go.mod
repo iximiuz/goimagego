@@ -7,6 +7,7 @@ require (
 	github.com/containers/image/v5 v5.1.0
 	github.com/containers/storage v1.15.8
 	github.com/cosiner/argv v0.0.1 // indirect
+	github.com/davecgh/go-spew v1.1.1
 	github.com/go-delve/delve v1.4.0 // indirect
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/mattn/go-isatty v0.0.12 // indirect
