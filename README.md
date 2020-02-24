@@ -11,6 +11,15 @@ echo "$LOGNAME:100000:65536" >> /etc/subuid
 echo "$LOGNAM:100000:65536" >> /etc/subgid
 ```
 
+## Usage
+
+```bash
+sudo LOG_LEVEL=trace `which go` run main.go \
+    --run-root /home/vagrant/images_tmp/run \
+     --root /home/vagrant/images_tmp/store  \
+     pull docker://quay.io/prometheus/prometheus
+```
+
 ## TODO:
 - check usage on clear Debian/Centos
 - document use cases

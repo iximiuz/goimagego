@@ -42,8 +42,11 @@ var cmdPull = &cobra.Command{
 			logrus.WithError(err).Fatal("Could not create policy context")
 		}
 
-		dstRefStr := srcRef.DockerReference().String()
-		dstRef, err := storage.Transport.ParseStoreReference(defaultStore(), dstRefStr)
+		dstName := imageName
+		if srcRef.DockerReference() != nil {
+			dstName = srcRef.DockerReference().String()
+		}
+		dstRef, err := storage.Transport.ParseStoreReference(defaultStore(), dstName)
 		if err != nil {
 			logrus.WithError(err).Fatal("Could not parse local image reference")
 		}
