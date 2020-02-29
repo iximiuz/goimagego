@@ -37,7 +37,7 @@ func initDefaultStoreOptions() {
 		_storeOptions.GraphRoot,
 		"image store root directory",
 	)
-	cmdRoot.Flags().StringVarP(
+	cmdRoot.PersistentFlags().StringVarP(
 		&_storeOptions.GraphDriverName,
 		"driver", "d",
 		"overlay",

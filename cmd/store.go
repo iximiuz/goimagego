@@ -14,8 +14,8 @@ func init() {
 
 var cmdStore = &cobra.Command{
 	Use:   "store",
-	Short: "shows store info",
-	Long:  "shows store info",
+	Short: "show store info",
+	Long:  "show store info",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("root = %v\n", defaultStore().GraphRoot())
 		fmt.Printf("run-root = %v\n", defaultStore().RunRoot())
