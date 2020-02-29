@@ -2,6 +2,12 @@
 
 ## Installation & Prerequisites
 
+Debian 10
+```bash
+apt-get install pkg-config libgpgme-dev libbtrfs-dev libdevmapper-dev
+```
+
+CentOS 8:
 ```bash
 yum install gpgme-devel libassuan-devel ostree-devel device-mapper-devel btrfs-progs-devel
 
